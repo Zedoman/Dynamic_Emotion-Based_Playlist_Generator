@@ -72,7 +72,7 @@ python emotion_detector.py
 curl -sfL https://download.daytona.io/daytona/install.sh | sudo bash && daytona server -y && daytona
 ```
 
-# Windows
+### Windows
 ```bash
 $architecture = if ($env:PROCESSOR_ARCHITECTURE -eq "AMD64") { "amd64" } else { "arm64" }
 md -Force "$Env:APPDATA\bin\daytona"; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]'Tls,Tls11,Tls12';
