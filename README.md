@@ -37,48 +37,54 @@ A dynamic music recommendation system that adapts playlists based on real-time e
 ```bash
 git clone https://github.com/Zedoman/Dynamic_Emotion-Based_Playlist_Generator
 cd emotion-based-playlist
- 
+```
 
 ### 2. Backend Setup   
 
-    ``bash
+    ```bash
     npm install  
 
     node server.js   
+    ```
 
 ### 3. Frontend Setup
 
+```bash
 cd Playlist-generator
 npm install  
 
 
 npm start  
 
-
+```
 ### 4. Emotion Detection Module
+```bash
 pip install opencv-python deepface spotipy
-
-python emotion_detector.py  
+```
+```bash
+python emotion_detector.py
+```  
 
 ### 5. Daytona Install
 
-Mac / Linux
-
+### Mac / Linux
+```bash
 curl -sfL https://download.daytona.io/daytona/install.sh | sudo bash && daytona server -y && daytona
+```
 
-Windows
-
+# Windows
+```bash
 $architecture = if ($env:PROCESSOR_ARCHITECTURE -eq "AMD64") { "amd64" } else { "arm64" }
 md -Force "$Env:APPDATA\bin\daytona"; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.SecurityProtocolType]'Tls,Tls11,Tls12';
 Invoke-WebRequest -URI "https://download.daytona.io/daytona/latest/daytona-windows-$architecture.exe" -OutFile "$Env:APPDATA\bin\daytona\daytona.exe";
 $env:Path += ";" + $Env:APPDATA + "\bin\daytona"; [Environment]::SetEnvironmentVariable("Path", $env:Path, [System.EnvironmentVariableTarget]::User);
 daytona serve;
-
+```
 
 # Usage
 ## Emotion Detection
 ## The emotion detection module uses a webcam to capture video frames and analyze emotions:
-
+```bash
 import cv2  
 from deepface import DeepFace  
 
@@ -103,10 +109,11 @@ while True:
 
 cap.release()  
 cv2.destroyAllWindows()  
+```
 
 ### Playlist Generator
 ### Generates playlists based on the detected emotion:
-
+```bash
 import random  
 
 def generate_playlist(emotion, tracks):  
@@ -119,10 +126,11 @@ tracks = [
     {"name": "Happy Song 1", "tags": ["Happy"], "popularity": 80},  
     {"name": "Calm Song 1", "tags": ["Calm"], "popularity": 75},  
 ]  
-
+```
 
 ### Backend API
 ### Handles requests for playlist generation:
+```bash
 const express = require('express');  
 const { exec } = require('child_process');  
 
@@ -141,10 +149,11 @@ app.post('/playlist', (req, res) => {
 });  
 
 app.listen(3000, () => console.log('Server running on port 3000'));  
+```
 
 ### Frontend
 ### React-based interface for users to view and interact with playlists:
-
+```bash
 import React, { useState, useEffect } from "react";  
 import axios from "axios";  
 
@@ -207,11 +216,11 @@ const App = () => {
 };  
 
 export default App;  
-
+```
 
 ### Benchmarking with Daytona
 ### Define test cases for performance evaluation:
-
+```bash
 {  
   "test_scenarios": [  
     {  
@@ -233,10 +242,10 @@ export default App;
   ],  
   "metrics": ["execution_time", "emotion_consistency_score"]  
 }  
-
-
+```
+```bash
 daytona run config.json --output results.json  
-
+```
 ### Deployment
 ### Frontend: Deploy on Vercel.
 ### Backend: Use AWS Lambda or DigitalOcean.
