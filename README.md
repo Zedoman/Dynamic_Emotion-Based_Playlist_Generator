@@ -50,7 +50,7 @@ cd emotion-based-playlist
 ### 3. Frontend Setup
 
 ```bash
-cd Playlist-generator
+cd Frontend
 npm install  
 
 
