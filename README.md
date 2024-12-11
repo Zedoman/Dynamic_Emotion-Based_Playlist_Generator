@@ -72,3 +72,10 @@ Powered by Daytona for easy setup and consistent development environment across 
 - **Data Handling:** pandas, numpy
 
 
+## Video
+
+
+https://github.com/user-attachments/assets/2fbafe56-e8a8-4589-81ba-f293d5d71513
+
+
+
