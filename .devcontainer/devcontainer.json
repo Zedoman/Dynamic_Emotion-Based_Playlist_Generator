@@ -1,0 +1,17 @@
+{
+    "name": "Emotion-Based Playlist Generator Dev Container",
+    "dockerFile": "Dockerfile",
+    "context": "..",
+    "settings": {
+      "python.pythonPath": "/usr/local/bin/python",
+      "editor.formatOnSave": true
+    },
+    "extensions": [
+      "ms-python.python",
+      "esbenp.prettier-vscode",
+      "dbaeumer.vscode-eslint"
+    ],
+    "postCreateCommand": "pip install -r requirements.txt",
+    "remoteUser": "vscode"
+  }
+  
