@@ -47,14 +47,16 @@ docker-compose up
 ```
 ### ✨ Features
 
-1. **Emotion-based Playlist Generation:** <br>
-Uses the user's emotional inputs to create personalized music playlists. <br>
-2. **API Integration:** <br>
-Fetches music data from external APIs to dynamically generate playlists. <br>
-3. **Machine Learning:** <br>
-Implements models to classify emotions based on user inputs and map them to suitable music tracks. <br>
-4. **Standardized Development Environment:** <br>
-Powered by Daytona for easy setup and consistent development environment across teams. <br>
+1. **Personalized Playlist Generation:** <br>
+Users can input their favorite artists, preferred genre, and language to generate a playlist tailored to their tastes. <br>
+2. **Emotion-Based Playlist:** <br>
+Based on the user's inputs, TuneTailor can suggest songs that align with their emotional preferences, ensuring the playlist matches their mood. <br>
+3. **Customizable Playlist Size:** <br>
+Users can specify how many songs they want in their playlist, making it easy to create short or long playlists (up to 60 songs). <br>
+4. **Genre and Language Preferences:** <br>
+Users can narrow down their playlist to specific genres (e.g., Hip-Hop, Jazz) and languages (e.g., English, Spanish), making the playlist more suited to their cultural or emotional context. <br>
+5. **User-Centered Customization:** <br>
+The app is built around users’ preferences, offering them the ability to fine-tune their playlist with precise details like the number of songs and specific artist genres. <br>
 
 ## Tech Stack  
 
