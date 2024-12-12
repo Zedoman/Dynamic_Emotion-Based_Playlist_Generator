@@ -12,6 +12,6 @@
       "dbaeumer.vscode-eslint"
     ],
     "postCreateCommand": "pip install -r requirements.txt",
-    "remoteUser": "vscode"
+    "remoteUser": "daytona"
   }
   
