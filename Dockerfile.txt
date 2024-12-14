@@ -1,6 +1,8 @@
 # For more information, please refer to https://aka.ms/vscode-docker-python
 FROM python:3-slim
 
+RUN apt-get update && \ apt-get install -y curl sudo && \ rm -rf /var/lib/apt/lists/*
+
 EXPOSE 5002
 
 # Keeps Python from generating .pyc files in the container
