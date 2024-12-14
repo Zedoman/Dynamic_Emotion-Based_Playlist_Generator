@@ -1,0 +1,27 @@
+{
+	"name": "DocBot Development Environment",
+	"image": "mcr.microsoft.com/devcontainers/python:3.10",
+	"forwardPorts": [8501],
+	"customizations": {
+	  "vscode": {
+		"settings": {
+		  "python.linting.enabled": true,
+		  "python.linting.pylintEnabled": true,
+		  "python.formatting.provider": "black",
+		  "files.autoSave": "afterDelay",
+		  "editor.formatOnSave": true,
+		  "editor.wordWrap": "on",
+		  "[python]": {
+			"editor.defaultFormatter": "ms-python.black-formatter"
+		  }
+		},
+		"extensions": [
+		  "ms-python.python",
+		  "ms-python.vscode-pylance",
+		  "ms-python.black-formatter",
+		  "ms-python.pylint"
+		]
+	  }
+	},
+	"postCreateCommand": "pip install -r requirements.txt"
+  }
