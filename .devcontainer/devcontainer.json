@@ -1,9 +1,9 @@
 {
     "name": "dynamicemotionbasedplaylistgenerator",
     "context": "..",
-    "dockerFile": "./Dockerfile",
+    "dockerFile": "../Dockerfile",
     "service": "dynamicemotionbasedplaylistgenerator",
-    "workspaceFolder": "/app",
+    "workspaceFolder": "../app",
     "extensions": [
       "ms-python.python",
       "ms-azuretools.vscode-docker"
