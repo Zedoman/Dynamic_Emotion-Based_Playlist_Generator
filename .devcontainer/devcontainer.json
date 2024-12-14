@@ -1,7 +1,7 @@
 {
 	"name": "dynamicemotionbasedplaylistgenerator",
 	"context": "..",
-	"dockerFile": "../Dockerfile",
+	"dockerFile": "../Dockerfile.txt",
 	"workspaceFolder": "/app",
 	"customizations": {
 	  "vscode": {
@@ -27,18 +27,10 @@
 		]
 	  }
 	},
-	"runArgs": [
-	  "--env", "PYTHONDONTWRITEBYTECODE=1",
-	  "--env", "PYTHONUNBUFFERED=1",
-	  "--env", "FLASK_APP=app.py"
-	],
-	"forwardPorts": [
-	  5002,
-	  5678
-	],
+	"forwardPorts": [5002, 5678],
 	"postCreateCommand": "pip install -r requirements.txt",
 	"remoteUser": "appuser",
 	"overrideCommand": true,
-	"postStartCommand": "python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 -m flask run --no-debugger --no-reload --host 0.0.0.0 --port 5002"
+	"postStartCommand": "echo 'Container started successfully'"
   }
   
