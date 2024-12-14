@@ -1,7 +1,7 @@
 {
-	"name": "DocBot Development Environment",
+	"name": "dynamicemotionbasedplaylistgenerator",
 	"dockerComposeFile": "../docker-compose.yml",
-	"service": "app",
+	"service": "dynamicemotionbasedplaylistgenerator",
 	"workspaceFolder": "/app",
 	"customizations": {
 	  "vscode": {
