@@ -2,13 +2,40 @@
 	"name": "dynamicemotionbasedplaylistgenerator",
 	"context": "..",
 	"dockerFile": "../Dockerfile",
-	
+	"workspaceFolder": "/app",
+	"customizations": {
+	  "vscode": {
+		"settings": {
+		  "python.pythonPath": "/usr/local/bin/python",
+		  "python.languageServer": "Pylance",
+		  "python.linting.enabled": true,
+		  "python.linting.pylintEnabled": true,
+		  "python.formatting.provider": "black",
+		  "files.autoSave": "afterDelay",
+		  "editor.formatOnSave": true,
+		  "editor.wordWrap": "on",
+		  "[python]": {
+			"editor.defaultFormatter": "ms-python.black-formatter"
+		  }
+		},
+		"extensions": [
+		  "ms-python.python",
+		  "ms-python.vscode-pylance",
+		  "ms-python.black-formatter",
+		  "ms-python.pylint",
+		  "ms-azuretools.vscode-docker"
+		]
+	  }
+	},
 	"runArgs": [
 	  "--env", "PYTHONDONTWRITEBYTECODE=1",
 	  "--env", "PYTHONUNBUFFERED=1",
 	  "--env", "FLASK_APP=app.py"
 	],
-	
+	"forwardPorts": [
+	  5002,
+	  5678
+	],
 	"postCreateCommand": "pip install -r requirements.txt",
 	"remoteUser": "appuser",
 	"overrideCommand": true,
