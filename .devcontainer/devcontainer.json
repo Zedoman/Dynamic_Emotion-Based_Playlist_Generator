@@ -1,7 +1,8 @@
 {
 	"name": "DocBot Development Environment",
 	"dockerComposeFile": "../docker-compose.yml",
-	"remoteUser": "vscode",
+	"service": "app",
+	"workspaceFolder": "/app",
 	"customizations": {
 	  "vscode": {
 		"settings": {
@@ -23,6 +24,7 @@
 		]
 	  }
 	},
-	"forwardPorts": [ 5002, 5678 ],
+	"forwardPorts": [5002, 5678],
 	"postCreateCommand": "pip install -r requirements.txt"
   }
+  
