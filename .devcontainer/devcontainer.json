@@ -1,6 +1,6 @@
 {
 	"name": "DocBot Development Environment",
-	"dockerComposeFile": "../docker-compose.debug.yml",
+	"dockerComposeFile": "../docker-compose.yml",
 	"remoteUser": "vscode",
 	"customizations": {
 	  "vscode": {
