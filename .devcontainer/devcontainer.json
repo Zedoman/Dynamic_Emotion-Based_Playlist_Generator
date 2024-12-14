@@ -1,29 +1,26 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/docker-existing-dockerfile
 {
-    "name": "dynamicemotionbasedplaylistgenerator",
-    "context": "..",
-    "dockerFile": "./Dockerfile",
-    "service": "dynamicemotionbasedplaylistgenerator",
-    "workspaceFolder": "/app",
-    "extensions": [
-      "ms-python.python",
-      "ms-azuretools.vscode-docker"
-    ],
-    "settings": {
-      "python.pythonPath": "/usr/local/bin/python",
-      "python.languageServer": "Pylance"
-    },
-    "runArgs": [
-      "--env", "PYTHONDONTWRITEBYTECODE=1",
-      "--env", "PYTHONUNBUFFERED=1",
-      "--env", "FLASK_APP=app.py"
-    ],
-    "ports": [
-      "5002:5002",
-      "5678:5678"
-    ],
-    "postCreateCommand": "pip install -r requirements.txt",
-    "remoteUser": "appuser",
-    "overrideCommand": true,
-    "postStartCommand": "python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 -m flask run --no-debugger --no-reload --host 0.0.0.0 --port 5002"
-  }
-  
+	"name": "Existing Dockerfile",
+	"build": {
+		// Sets the run context to one level up instead of the .devcontainer folder.
+		"context": "..",
+		// Update the 'dockerFile' property if you aren't using the standard 'Dockerfile' filename.
+		"dockerfile": "../Dockerfile.txt"
+	}
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	// "forwardPorts": [],
+
+	// Uncomment the next line to run commands after the container is created.
+	// "postCreateCommand": "cat /etc/os-release",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as an existing user other than the container default. More info: https://aka.ms/dev-containers-non-root.
+	// "remoteUser": "devcontainer"
+}
