@@ -3,13 +3,8 @@ FROM python:3
 
 # Install curl and sudo
 RUN apt-get update && \
-    apt-get install -y curl sudo && \
+    apt-get install -y curl && \
     rm -rf /var/lib/apt/lists/*
-
-# Add the appuser user and add to the sudoers group with no password requirement
-RUN adduser -u 5678 --disabled-password --gecos "" appuser && \
-    echo "appuser ALL=(ALL) NOPASSWD:ALL" >> /etc/sudoers && \
-    chown -R appuser /app
 
 EXPOSE 5002
 
