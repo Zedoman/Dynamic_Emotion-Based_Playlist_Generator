@@ -2,16 +2,9 @@ version: '3.4'
 
 services:
   dynamicemotionbasedplaylistgenerator:
+    image: dynamicemotionbasedplaylistgenerator
     build:
       context: .
-      dockerfile: Dockerfile
-    image: dynamicemotionbasedplaylistgenerator
+      dockerfile: ./Dockerfile
     ports:
-      - "5002:5002"
-      - "5678:5678"
-    environment:
-      - PYTHONDONTWRITEBYTECODE=1
-      - PYTHONUNBUFFERED=1
-      - FLASK_APP=app.py
-    volumes:
-      - .:/app
+      - 5002:5002
