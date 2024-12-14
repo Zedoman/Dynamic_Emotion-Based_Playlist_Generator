@@ -1,6 +1,6 @@
 {
     "name": "dynamicemotionbasedplaylistgenerator",
-    "context": ".",
+    "context": "..",
     "dockerFile": "../Dockerfile",
     "service": "dynamicemotionbasedplaylistgenerator",
     "workspaceFolder": "/app",
@@ -22,6 +22,8 @@
       "5678:5678"
     ],
     "postCreateCommand": "pip install -r requirements.txt",
-    "remoteUser": "appuser"
+    "remoteUser": "appuser",
+    "overrideCommand": true,
+    "postStartCommand": "python /tmp/debugpy --wait-for-client --listen 0.0.0.0:5678 -m flask run --no-debugger --no-reload --host 0.0.0.0 --port 5002"
   }
   
