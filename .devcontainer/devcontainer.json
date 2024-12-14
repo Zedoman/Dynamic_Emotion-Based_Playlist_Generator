@@ -1,7 +1,7 @@
 {
     "name": "dynamicemotionbasedplaylistgenerator",
     "context": ".",
-    "dockerFile": "./Dockerfile",
+    "dockerFile": "../Dockerfile",
     "service": "dynamicemotionbasedplaylistgenerator",
     "workspaceFolder": "/app",
     "extensions": [
