@@ -15,36 +15,31 @@ Follow the Daytona installation guide to install Daytona on your machine:
 2. **Create the Workspace**: 
 
 ```bash
-    daytona create https://github.com/Zedoman/Dynamic_Emotion-Based_Playlist_Generator
+daytona create https://github.com/Zedoman/Dynamic_Emotion-Based_Playlist_Generator
 ```
 This command will set up the workspace with all necessary files and configurations.
 
 3. **Set up Dependencies**:
 
-a. *Navigate to the project directory:*
+*Navigate to the project directory:*
 
 ```bash
 cd Dynamic_Emotion-Based_Playlist_Generator
 ```
 
-b. *Install the required dependencies using the requirements.txt file:*
+<!-- b. *Install the required dependencies using the requirements.txt file:*
 
 ```bash
 pip install -r requirements.txt
-```
+``` -->
 
 4. **Start the Application:**:
 
-a. *To start the application, use the following command:*
+*To start the application, use the following command:*
 ```bash
 python app.py
 ```
 
-b. *or if you are using Docker, start the container:*
-
-```bash
-docker-compose up
-```
 ### ✨ Features
 
 1. **Personalized Playlist Generation:** <br>
