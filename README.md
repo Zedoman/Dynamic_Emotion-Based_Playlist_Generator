@@ -5,7 +5,7 @@ A Python-based application that dynamically generates playlists based on the use
 ---
 ## 🚀 Getting Started
 
-## Open Using Daytona
+## Open Using Daytona [Daytona Official](https://github.com/daytonaio/sample-python-ai-playlist-generator)
 To quickly start working on this project, use Daytona to set up a standardized development environment.
 
 1. **Install Daytona**:
